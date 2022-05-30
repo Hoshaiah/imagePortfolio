@@ -5,7 +5,7 @@ import {increment, decrement, incrementByAmount} from '../features/counter/count
 import * as ImagePicker from 'expo-image-picker';
 import {unmountImage, setImage} from '../features/counter/imagerSlice'
 
-function Home () {
+function HomeScreen () {
     const counter = useSelector((state) => state.counter.value);
     const imager = useSelector((state) => state.imager.selectedImage)
     const dispatch = useDispatch();
@@ -52,4 +52,4 @@ const styles = StyleSheet.create({
     }
   });
 
-export default Home;
+export default HomeScreen;
